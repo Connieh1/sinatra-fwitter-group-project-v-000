@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find_by_slug(params[:slug])
     erb :'users/show'
   end
-  
+
   get '/signup' do
     if !logged_in?
       erb :'/users/create_user'
