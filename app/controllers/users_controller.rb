@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  get '/homepage' do
-    redirect '/'
+  get '/signup' do
+    erb :'/users/create_user'
   end
 end
