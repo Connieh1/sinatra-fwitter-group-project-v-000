@@ -15,7 +15,8 @@ class UsersController < ApplicationController
   post  '/signup' do
     if params[:username] = "" || params[:email] = "" || params[:password] = ""
       redirect '/signup'
-  
+    else
+      redirect '/tweets'
     end
   end
 end
